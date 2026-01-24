@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Allowed vs Not Allowed Activities</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f8fafc;
+        }
+
+        .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Main Theme Blue */
+        .text-finnish-blue {
+            color: #002F6C;
+        }
+
+        .bg-finnish-blue {
+            background-color: #002F6C;
+        }
+
+        /* New Custom Teal (Allowed) - Harmonizes with blue */
+        .text-teal-custom {
+            color: #00897B;
+        }
+
+        .bg-teal-custom-light {
+            background-color: #E0F2F1;
+        }
+
+        .bg-teal-custom-superlight {
+            background-color: #F0FDFA;
+        }
+
+        .border-teal-custom {
+            border-color: #00897B;
+        }
+
+        /* New Custom Deep Rose (Not Allowed) - Less jarring */
+        .text-rose-custom {
+            color: #C62828;
+        }
+
+        .bg-rose-custom-light {
+            background-color: #FFEBEE;
+        }
+
+        .bg-rose-custom-superlight {
+            background-color: #FFF5F7;
+        }
+
+        .border-rose-custom {
+            border-color: #C62828;
+        }
+
+        .card-shadow {
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+        }
+
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-full h-screen bg-white flex flex-col relative overflow-hidden">
+
+        <div class="px-24 pt-12 pb-4 z-10 flex-none">
+            <div class="flex items-center mb-4">
+                <span
+                    class="bg-gray-100 text-gray-500 text-sm font-bold px-4 py-1 rounded-full uppercase tracking-wider mr-4">Provisions
+                    in Law</span>
+                <div class="h-px bg-gray-200 flex-1"></div>
+            </div>
+            <h1 class="font-heading text-5xl font-extrabold text-gray-800 leading-tight">
+                What activities can a jobseeker take part in <br />
+                <span class="text-finnish-blue">without losing unemployment benefits?</span>
+            </h1>
+        </div>
+
+        <div class="flex-1 px-24 pb-12 flex space-x-16 z-10 items-stretch">
+
+            <div class="flex-1 flex flex-col">
+                <div
+                    class="bg-white h-full rounded-3xl border-t-8 border-teal-custom card-shadow p-10 relative overflow-hidden group hover-lift">
+                    <div
+                        class="absolute -right-8 -top-8 text-teal-custom opacity-10 transform rotate-12 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6 pointer-events-none">
+                        <i class="fas fa-check-circle text-[12rem]"></i>
+                    </div>
+
+                    <div class="flex items-center mb-8 relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-full bg-teal-custom-light text-teal-custom flex items-center justify-center text-3xl mr-5 shadow-sm">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-heading text-3xl font-bold text-gray-800">Allowed</h2>
+                            <p class="text-teal-custom font-bold text-sm uppercase tracking-widest mt-1">Safe Activities
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6 relative z-10">
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-5 text-teal-custom">
+                                <i class="fas fa-hand-holding-heart text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-gray-800 text-xl mb-1">Non-profit Organizations
+                                </h3>
+                                <p class="text-gray-600 leading-relaxed text-lg">Activities without pay in common-good
+                                    non-profit organizations.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-px bg-teal-custom-light opacity-50"></div>
+
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-5 text-teal-custom">
+                                <i class="fas fa-people-carry-box text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-gray-800 text-xl mb-1">Mutual Help</h3>
+                                <p class="text-gray-600 leading-relaxed text-lg">Occasional common-good work helping
+                                    others (e.g., neighbour's renovation).</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-px bg-teal-custom-light opacity-50"></div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-1 flex flex-col">
+                <div
+                    class="bg-white h-full rounded-3xl border-t-8 border-rose-custom card-shadow p-10 relative overflow-hidden group hover-lift">
+                    <div
+                        class="absolute -right-8 -top-8 text-rose-custom opacity-10 transform rotate-12 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6 pointer-events-none">
+                        <i class="fas fa-ban text-[12rem]"></i>
+                    </div>
+
+                    <div class="flex items-center mb-8 relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-full bg-rose-custom-light text-rose-custom flex items-center justify-center text-3xl mr-5 shadow-sm">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-heading text-3xl font-bold text-gray-800">Not Allowed</h2>
+                            <p class="text-rose-custom font-bold text-sm uppercase tracking-widest mt-1">Risk to
+                                Benefits</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6 relative z-10">
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-5 text-rose-custom">
+                                <i class="fas fa-briefcase text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-gray-800 text-xl mb-1">Unpaid Corporate Work</h3>
+                                <p class="text-gray-600 leading-relaxed text-lg">Work without remuneration at companies
+                                    and businesses geared towards profit.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-px bg-rose-custom-light opacity-50"></div>
+
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-5 text-rose-custom">
+                                <i class="fas fa-file-contract text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-gray-800 text-xl mb-1">Disguised Employment</h3>
+                                <p class="text-gray-600 leading-relaxed text-lg">Work activities that are normally
+                                    carried out in paid employment relationships.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-px bg-rose-custom-light opacity-50"></div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div
+            class="absolute bottom-0 left-0 w-full h-3 bg-gradient-to-r from-[#00897B] via-gray-100 to-[#C62828] opacity-30 z-0">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[25vh] h-[25vh] bg-teal-custom-superlight rounded-tr-full -z-0 opacity-70 pointer-events-none">
+        </div>
+        <div
+            class="absolute top-0 right-0 w-[40vh] h-[40vh] bg-rose-custom-superlight rounded-bl-full -z-0 opacity-70 pointer-events-none">
+        </div>
+
+        <a href="page3.html"
+            class="absolute left-8 top-1/2 transform -translate-y-1/2 text-4xl finnish-blue hover:scale-110 transition-transform z-50 opacity-60 hover:opacity-100">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a href="page5.html"
+            class="absolute right-8 top-1/2 transform -translate-y-1/2 text-4xl finnish-blue hover:scale-110 transition-transform z-50 opacity-60 hover:opacity-100">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+</body>
+
+</html>

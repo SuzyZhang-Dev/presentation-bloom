@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contents</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;family=Open+Sans:wght@300;400;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            /* 防止出现不必要的滚动条 */
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .finnish-blue {
+            color: #002F6C;
+        }
+
+        .bg-finnish-blue {
+            background-color: #002F6C;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-full h-screen bg-white flex relative overflow-hidden">
+
+        <div class="absolute left-0 top-0 bottom-0 w-4 bg-finnish-blue z-20"></div>
+
+        <div class="flex-1 flex flex-col px-24 py-12 ml-4 z-10 h-full">
+
+            <div class="mb-8 flex items-end border-b-2 border-gray-100 pb-6 mt-4">
+                <h1 class="font-heading text-6xl font-bold finnish-blue tracking-wider uppercase">
+                    Contents
+                </h1>
+                <div class="ml-6 mb-2 text-gray-400 text-lg font-light tracking-widest uppercase">
+                    / Agenda
+                </div>
+            </div>
+
+            <div class="flex-1 flex flex-col justify-center space-y-12 pr-20">
+                <div class="flex items-start group cursor-pointer">
+                    <div class="mr-8 pt-1">
+                        <span
+                            class="font-heading text-5xl font-bold text-gray-200 group-hover:text-finnish-blue transition-colors duration-300">01</span>
+                    </div>
+                    <div class="flex-1">
+                        <h2
+                            class="font-heading text-3xl font-bold text-gray-800 mb-2 group-hover:text-finnish-blue transition-colors duration-300">
+                            Entrepreneurship &amp; Self-employment
+                        </h2>
+                        <p class="text-gray-500 text-lg font-light leading-relaxed">
+                            Provisions in Law, definitions of full-time vs. part-time work, and insights from
+                            unemployment authorities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start group cursor-pointer">
+                    <div class="mr-8 pt-1">
+                        <span
+                            class="font-heading text-5xl font-bold text-gray-200 group-hover:text-finnish-blue transition-colors duration-300">02</span>
+                    </div>
+                    <div class="flex-1">
+                        <h2
+                            class="font-heading text-3xl font-bold text-gray-800 mb-2 group-hover:text-finnish-blue transition-colors duration-300">
+                            Case Law – Work or Leisure?
+                        </h2>
+                        <div class="flex flex-wrap items-center text-gray-500 text-lg font-light leading-relaxed gap-2">
+                            <span
+                                class="bg-blue-50 text-blue-900 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">7
+                                Cases</span>
+                            <p>Analysis of real-world scenarios: Delivery workers, YouTubers, Athletes, Board members,
+                                Gamers, and more.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-start group cursor-pointer">
+                    <div class="mr-8 pt-1">
+                        <span
+                            class="font-heading text-5xl font-bold text-gray-200 group-hover:text-finnish-blue transition-colors duration-300">03</span>
+                    </div>
+                    <div class="flex-1">
+                        <h2
+                            class="font-heading text-3xl font-bold text-gray-800 mb-2 group-hover:text-finnish-blue transition-colors duration-300">
+                            Concluding Remarks
+                        </h2>
+                        <p class="text-gray-500 text-lg font-light leading-relaxed">
+                            Summary of key findings and final takeaways for jobseekers and authorities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="absolute top-0 right-0 w-[50vw] h-[50vw] bg-gray-50 rounded-bl-full pointer-events-none transform translate-x-20 -translate-y-20">
+        </div>
+
+        <div class="absolute bottom-32 right-32 w-20 h-20 border-4 border-gray-100 rounded-full pointer-events-none">
+        </div>
+        <div class="absolute bottom-20 right-52 w-10 h-10 bg-blue-50 rounded-full pointer-events-none opacity-60"></div>
+
+        <a href="index.html"
+            class="absolute left-8 top-1/2 transform -translate-y-1/2 text-4xl finnish-blue hover:scale-110 transition-transform z-50 cursor-pointer">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a href="page2.html"
+            class="absolute right-8 top-1/2 transform -translate-y-1/2 text-4xl finnish-blue hover:scale-110 transition-transform z-50 cursor-pointer">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+</body>
+
+</html>

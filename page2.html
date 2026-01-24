@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Entrepreneurship &amp; Self-employment Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;family=Open+Sans:wght@300;400;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            /* 关键：防止滚动 */
+            overflow: hidden;
+            background-color: #f8fafc;
+        }
+
+        .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .text-finnish-blue {
+            color: #002F6C;
+        }
+
+        .bg-finnish-blue {
+            background-color: #002F6C;
+        }
+
+        .border-finnish-blue {
+            border-color: #002F6C;
+        }
+
+        .shadow-soft {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .icon-circle {
+            width: 70px;
+            /* 稍微调小一点适配全屏比例 */
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .card-hover:hover .icon-circle {
+            transform: scale(1.1);
+            background-color: #002F6C;
+            color: white;
+        }
+
+        /* 确保hover时图标变白 */
+        .card-hover:hover .icon-circle i {
+            color: white;
+        }
+
+        /* Hide scrollbar */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-full h-screen bg-white flex relative overflow-hidden">
+
+        <div
+            class="absolute top-0 right-0 w-[50vh] h-[50vh] bg-blue-50 rounded-bl-full opacity-60 pointer-events-none -z-0">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[30vh] h-[30vh] bg-gray-50 rounded-tr-full opacity-60 pointer-events-none -z-0">
+        </div>
+
+        <div
+            class="w-[35%] h-full flex flex-col justify-center pl-20 pr-12 z-10 relative border-r border-gray-100 bg-white/90 backdrop-blur-sm">
+            <div class="relative">
+                <span
+                    class="text-finnish-blue font-bold text-[10rem] opacity-5 font-heading absolute -top-24 -left-10 select-none z-0">01</span>
+
+                <div class="relative z-10">
+                    <div class="w-20 h-2 bg-finnish-blue mb-8"></div>
+                    <h2 class="font-heading text-5xl font-bold text-gray-800 leading-tight mb-8">
+                        Entrepreneurship <br />
+                        <span class="text-finnish-blue">&amp; Self-employment</span>
+                    </h2>
+                    <p class="text-gray-500 text-xl leading-relaxed font-light">
+                        An overview of the legal framework, relevant authorities, and benefit payment channels in
+                        Finland.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-16 flex space-x-3">
+                <div class="w-3 h-3 rounded-full bg-finnish-blue"></div>
+                <div class="w-3 h-3 rounded-full bg-gray-200"></div>
+                <div class="w-3 h-3 rounded-full bg-gray-200"></div>
+            </div>
+        </div>
+
+        <div class="w-[65%] h-full flex flex-col justify-center px-24 space-y-8 z-10">
+
+            <div
+                class="card-hover group bg-white p-8 rounded-2xl border border-gray-100 shadow-soft flex items-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl cursor-default">
+                <div class="mr-8">
+                    <div class="icon-circle bg-blue-50 text-finnish-blue">
+                        <i class="fas fa-scale-balanced text-3xl"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3
+                        class="font-heading text-2xl font-bold text-gray-800 mb-2 group-hover:text-finnish-blue transition-colors">
+                        Legal Framework</h3>
+                    <p class="text-gray-600 font-semibold text-lg">Unemployment Insurance Act</p>
+                    <p class="text-gray-400 text-base">(1290/2002)</p>
+                </div>
+            </div>
+
+            <div
+                class="card-hover group bg-white p-8 rounded-2xl border border-gray-100 shadow-soft flex items-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl cursor-default">
+                <div class="mr-8">
+                    <div class="icon-circle bg-blue-50 text-finnish-blue">
+                        <i class="fas fa-building-columns text-3xl"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3
+                        class="font-heading text-2xl font-bold text-gray-800 mb-2 group-hover:text-finnish-blue transition-colors">
+                        Authority Statement</h3>
+                    <p class="text-gray-600 font-semibold text-lg">KEHA-Centres</p>
+                    <p class="text-gray-400 text-base">Development and Administration Centre for ELY Centres &amp; TE
+                        Offices</p>
+                </div>
+            </div>
+
+            <div
+                class="card-hover group bg-white p-8 rounded-2xl border border-gray-100 shadow-soft flex items-start transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl cursor-default">
+                <div class="mr-8 mt-1">
+                    <div class="icon-circle bg-blue-50 text-finnish-blue">
+                        <i class="fas fa-hand-holding-dollar text-3xl"></i>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <h3
+                        class="font-heading text-2xl font-bold text-gray-800 mb-4 group-hover:text-finnish-blue transition-colors">
+                        Payments of Benefits</h3>
+                    <div class="flex items-center space-x-6">
+                        <div
+                            class="flex-1 bg-gray-50 rounded-xl p-4 border border-gray-200 group-hover:border-blue-100 transition-colors">
+                            <p class="font-bold text-gray-700 text-base">KELA</p>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">(Kansaneläkelaitos)</p>
+                        </div>
+                        <div class="text-gray-300 font-bold text-sm">OR</div>
+                        <div
+                            class="flex-1 bg-gray-50 rounded-xl p-4 border border-gray-200 group-hover:border-blue-100 transition-colors">
+                            <p class="font-bold text-gray-700 text-base">Unemployment Funds</p>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide">(Kassa - Earnings-related)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="page1.html"
+            class="absolute left-8 top-1/2 transform -translate-y-1/2 text-4xl finnish-blue hover:scale-110 transition-transform z-50 opacity-50 hover:opacity-100">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a href="page3.html"
+            class="absolute right-8 top-1/2 transform -translate-y-1/2 text-4xl finnish-blue hover:scale-110 transition-transform z-50 opacity-50 hover:opacity-100">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+</body>
+
+</html>
