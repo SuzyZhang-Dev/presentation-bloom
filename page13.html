@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Wrap-up</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f8fafc;
+        }
+
+        .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .text-finnish-blue {
+            color: #002F6C;
+        }
+
+        .bg-finnish-blue {
+            background-color: #002F6C;
+        }
+
+        .border-finnish-blue {
+            border-color: #002F6C;
+        }
+
+        .shadow-soft {
+            box-shadow: 0 10px 30px -5px rgba(0, 47, 108, 0.08);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -5px rgba(0, 47, 108, 0.12);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-full h-screen bg-white relative overflow-hidden flex flex-col items-center justify-center py-10">
+
+        <div
+            class="absolute top-0 right-0 w-[40vh] h-[40vh] bg-blue-50 rounded-bl-full pointer-events-none -z-0 opacity-60">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[30vh] h-[30vh] bg-gray-50 rounded-tr-full pointer-events-none -z-0 opacity-60">
+        </div>
+
+        <div class="text-center mb-12 z-10 max-w-4xl mx-auto">
+            <h1 class="font-heading text-5xl font-extrabold text-gray-800 leading-tight mb-2">
+                Wrap-up
+            </h1>
+        </div>
+
+        <div class="grid grid-cols-2 gap-8 max-w-6xl w-full px-16 z-10 mb-10">
+
+            <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-soft flex items-center">
+                <div
+                    class="flex-shrink-0 w-12 h-12 rounded-full bg-gray-100 text-gray-500 flex items-center justify-center text-xl mr-6">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div>
+                    <p class="text-gray-700 text-lg leading-relaxed font-medium">
+                        Not always clear line between entrepreneurship or self-employment and non-work activities. A lot
+                        of grey area.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-soft flex items-center">
+                <div
+                    class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center text-xl mr-6">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <div>
+                    <p class="text-gray-700 text-lg leading-relaxed font-medium">
+                        No exact legislation. Especially forms of self-employment are many.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-soft flex items-center">
+                <div
+                    class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-50 text-amber-500 flex items-center justify-center text-xl mr-6">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <div>
+                    <p class="text-gray-700 text-lg leading-relaxed font-medium">
+                        Oftentimes the decisions of the Court reached after vote.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-soft flex items-center">
+                <div
+                    class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-50 text-emerald-500 flex items-center justify-center text-xl mr-6">
+                    <i class="fas fa-mobile-screen"></i>
+                </div>
+                <div>
+                    <p class="text-gray-700 text-lg leading-relaxed font-medium">
+                        Technology has offered more possibilities for people to engage in various activities.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl w-full px-16 z-10">
+            <div class="bg-finnish-blue rounded-xl p-8 shadow-lg relative overflow-hidden group card-hover">
+                <div
+                    class="absolute -right-6 -bottom-6 text-white opacity-10 text-8xl transform group-hover:scale-110 transition-transform duration-500">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+
+                <div class="flex items-center relative z-10">
+                    <div class="mr-8 text-blue-300 text-3xl">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div>
+                        <p class="text-white text-xl font-bold leading-relaxed">
+                            Question: At what point do the rights to assembly and free speech come in jeopardy?
+                        </p>
+                        <p class="text-blue-200 text-base italic mt-2">
+                            So far no court decisions on this.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-6 right-8 text-gray-300 font-heading font-bold text-2xl z-10">14</div>
+
+        <a href="page12.html"
+            class="absolute left-8 top-1/2 transform -translate-y-1/2 text-4xl finnish-blue hover:scale-110 transition-transform z-50 opacity-60 hover:opacity-100">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a href="page14.html"
+            class="absolute right-8 top-1/2 transform -translate-y-1/2 text-4xl finnish-blue hover:scale-110 transition-transform z-50 opacity-60 hover:opacity-100">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+</body>
+
+</html>

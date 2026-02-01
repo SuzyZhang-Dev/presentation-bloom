@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Case Study - Ice Hockey Player</title>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
-<style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Case Law 3 - Icehockey Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
         body {
             font-family: 'Open Sans', sans-serif;
             margin: 0;
@@ -16,135 +18,200 @@
             overflow: hidden;
             background-color: #f8fafc;
         }
+
         .font-heading {
             font-family: 'Montserrat', sans-serif;
         }
+
         .text-finnish-blue {
             color: #002F6C;
         }
+
         .bg-finnish-blue {
             background-color: #002F6C;
         }
+
         .border-finnish-blue {
             border-color: #002F6C;
         }
-        .shadow-card {
-            box-shadow: 0 4px 20px rgba(0, 47, 108, 0.08);
+
+        /* Using the Teal accent for consistency in Decisions */
+        .text-teal-custom {
+            color: #00897B;
         }
+
+        .bg-teal-custom-light {
+            background-color: #E0F2F1;
+        }
+
+        .border-teal-custom {
+            border-color: #00897B;
+        }
+
+        .shadow-card {
+            box-shadow: 0 10px 30px -5px rgba(0, 47, 108, 0.1);
+        }
+
         .left-panel-clip {
-            clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+            /* 保持 Page 7 的切角比例 */
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+        }
+
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -5px rgba(0, 47, 108, 0.15);
         }
     </style>
 </head>
-<body>
-<div class="w-full h-full bg-white flex relative overflow-hidden">
-<!-- Left Visual Panel -->
-<div class="w-[35%] h-full bg-blue-50 relative left-panel-clip z-10 flex flex-col items-center pt-20 px-8">
-<!-- Case Number Badge -->
-<div class="absolute top-10 left-10">
-<span class="font-heading font-extrabold text-6xl text-blue-200 select-none">03</span>
-</div>
-<!-- Image Container -->
-<div class="w-64 h-64 rounded-full bg-white border-4 border-white shadow-card flex items-center justify-center overflow-hidden mb-8 relative z-20 mt-12">
-<img alt="Ice Hockey Player" class="w-full h-full object-cover transform scale-110" src="https://page.gensparksite.com/slides_images/06d7983c4cd47e2eb62bd95378468ae9.webp"/>
-</div>
-<!-- Key Question -->
-<div class="text-center">
-<h3 class="font-heading font-bold text-xl text-finnish-blue mb-2">The Core Question</h3>
-<div class="w-12 h-1 bg-blue-400 mx-auto mb-4"></div>
-<p class="text-gray-600 italic leading-relaxed px-4">
-                    "Is the player playing for profit or passion? Where is the line drawn?"
-                </p>
-</div>
-<!-- Geometric Accents -->
-<div class="absolute bottom-0 left-0 w-full h-32 bg-blue-100 opacity-50 z-0"></div>
-<div class="absolute bottom-10 left-10 w-16 h-16 border-4 border-white rounded-full opacity-40"></div>
-</div>
-<!-- Right Content Panel -->
-<div class="flex-1 h-full pt-8 pb-8 pr-16 pl-4 flex flex-col z-20">
-<!-- Header -->
-<div class="mb-6 border-b border-gray-100 pb-4">
-<div class="flex items-center mb-2">
-<span class="bg-finnish-blue text-white text-xs font-bold px-3 py-1 rounded-sm uppercase tracking-wider mr-3">Case Law</span>
-<span class="text-gray-400 text-sm font-semibold tracking-wide">Work or Leisure?</span>
-</div>
-<h1 class="font-heading text-4xl font-bold text-gray-800">
-                    Ice Hockey Player <span class="text-blue-400 font-light text-3xl">| Pro or Amateur?</span>
-</h1>
-</div>
-<!-- Content Cards Container -->
-<div class="flex-1 flex flex-col space-y-4">
-<!-- Factors Card -->
-<div class="bg-white border-l-4 border-gray-400 rounded-r-lg p-5 shadow-sm hover:shadow-md transition-shadow">
-<div class="flex items-start">
-<div class="mt-1 mr-4 text-gray-400">
-<i class="fas fa-magnifying-glass-chart text-xl"></i>
-</div>
-<div>
-<h4 class="font-heading font-bold text-gray-700 mb-2">Key Assessment Factors</h4>
-<ul class="space-y-2 text-gray-600 text-sm leading-relaxed">
-<li class="flex items-start">
-<span class="mr-2 text-blue-400 mt-1"><i class="fas fa-file-contract text-xs"></i></span>
-<span><strong>Status:</strong> Contracted/professional match fees vs. amateur status.</span>
-</li>
-<li class="flex items-start">
-<span class="mr-2 text-blue-400 mt-1"><i class="fas fa-clock text-xs"></i></span>
-<span><strong>Schedule:</strong> Intensity of training and match schedule.</span>
-</li>
-<li class="flex items-start">
-<span class="mr-2 text-blue-400 mt-1"><i class="fas fa-money-bill-wave text-xs"></i></span>
-<span><strong>Income:</strong> Regularity and amount of earnings.</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<!-- Scenario 1: Professional (Work) -->
-<div class="bg-blue-50 border-l-4 border-finnish-blue rounded-r-lg p-4 shadow-sm hover:shadow-md transition-shadow">
-<div class="flex items-start">
-<div class="mt-1 mr-4 text-finnish-blue">
-<i class="fas fa-briefcase text-xl"></i>
-</div>
-<div>
-<h4 class="font-heading font-bold text-finnish-blue mb-1">Scenario A: Professional / Paid</h4>
-<p class="text-gray-700 text-sm leading-relaxed mb-2">
-                                If the player receives regular remuneration or match fees, it is typically deemed as <span class="font-bold">self-employment</span> or professional work.
-                            </p>
-<div class="inline-flex items-center text-blue-800 font-bold text-xs bg-blue-100 px-2 py-1 rounded">
-<i class="fas fa-info-circle mr-1"></i> Impacts benefits (Full/Part-time)
-                            </div>
-</div>
-</div>
-</div>
-<!-- Scenario 2: Amateur (Leisure) -->
-<div class="bg-emerald-50 border-l-4 border-emerald-500 rounded-r-lg p-4 shadow-sm hover:shadow-md transition-shadow">
-<div class="flex items-start">
-<div class="mt-1 mr-4 text-emerald-600">
-<i class="fas fa-heart text-xl"></i>
-</div>
-<div>
-<h4 class="font-heading font-bold text-emerald-700 mb-1">Scenario B: Amateur Status</h4>
-<p class="text-gray-700 text-sm leading-relaxed">
-                                Players with amateur status who receive only small stipends or expense allowances are <span class="font-bold">usually not considered</span> to be working.
-                            </p>
-<div class="mt-2 inline-flex items-center text-emerald-700 font-bold text-xs bg-emerald-100 px-2 py-1 rounded">
-<i class="fas fa-check mr-1"></i> Likely retains full benefits
-                            </div>
-</div>
-</div>
-</div>
-</div>
-<!-- Page Number -->
-<div class="absolute bottom-6 right-8 text-gray-300 font-heading font-bold text-2xl">09</div>
-</div>
 
-    <!-- Navigation Arrows -->
-    <a href="page7.html" class="absolute left-8 top-1/2 transform -translate-y-1/2 text-4xl finnish-blue hover:scale-110 transition-transform z-50">
-        <i class="fas fa-chevron-left"></i>
-    </a>
-    <a href="page9.html" class="absolute right-8 top-1/2 transform -translate-y-1/2 text-4xl finnish-blue hover:scale-110 transition-transform z-50">
-        <i class="fas fa-chevron-right"></i>
-    </a>
-</div>
+<body>
+    <div class="w-full h-screen bg-white flex relative overflow-hidden">
+
+        <div
+            class="w-[40%] h-full bg-blue-50 relative left-panel-clip z-10 flex flex-col items-center justify-center px-8">
+
+            <div class="absolute top-16 left-10 pointer-events-none">
+                <span
+                    class="font-heading font-extrabold text-[10rem] text-blue-100 select-none leading-none opacity-50">03</span>
+            </div>
+
+            <div
+                class="w-48 h-48 rounded-full bg-white border-4 border-white shadow-card flex items-center justify-center overflow-hidden mb-10 relative z-20 flex-shrink-0">
+                <img alt="Ice Hockey Player" class="w-full h-full object-cover transform scale-110"
+                    src="https://page.gensparksite.com/slides_images/06d7983c4cd47e2eb62bd95378468ae9.webp" />
+            </div>
+
+            <div class="relative z-20 flex flex-col items-center opacity-60">
+                <div class="flex items-center space-x-8 text-finnish-blue mb-4">
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-2">
+                            <i class="fas fa-person-skating text-xl"></i>
+                        </div>
+                    </div>
+
+                    <div class="h-8 w-px bg-blue-300"></div>
+
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mb-2">
+                            <i class="fas fa-briefcase text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex space-x-2">
+                    <div class="w-2 h-2 rounded-full bg-blue-200"></div>
+                    <div class="w-2 h-2 rounded-full bg-blue-300"></div>
+                    <div class="w-2 h-2 rounded-full bg-blue-200"></div>
+                </div>
+            </div>
+
+            <div
+                class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-blue-100 to-transparent opacity-50 z-0">
+            </div>
+        </div>
+
+        <div class="flex-1 h-full flex flex-col justify-center px-12 relative z-20">
+
+            <div class="mb-8 border-b border-gray-100 pb-5">
+                <div class="flex items-center mb-2">
+                    <span
+                        class="bg-finnish-blue text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-wider mr-3">Case
+                        Law 3</span>
+                    <span class="text-gray-400 text-sm font-semibold tracking-wide uppercase">Work or Leisure?</span>
+                </div>
+                <h1 class="font-heading text-4xl font-bold text-gray-800 leading-tight">
+                    Icehockey player
+                </h1>
+            </div>
+
+            <div class="flex flex-col space-y-5">
+
+                <div class="bg-white border-l-8 border-gray-300 rounded-r-xl p-6 shadow-sm hover-lift flex items-start">
+                    <div class="mt-1 mr-6 text-gray-400">
+                        <i class="fas fa-hockey-puck text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-heading font-bold text-lg text-gray-700 mb-2">The Facts &amp; Claim</h4>
+                        <ul class="space-y-2 text-gray-600 text-base leading-relaxed">
+                            <li class="flex items-start">
+                                <span class="mr-2 text-blue-400">•</span>
+                                A was a icehockey player at a national league level.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2 text-blue-400">•</span>
+                                <strong>Status:</strong> A was not engaged in worklife or studies.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2 text-blue-400">•</span>
+                                <strong>Contract:</strong> No employment contract had been signed and A did not receive
+                                wages nor any other form of remuneration.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2 text-blue-400">•</span>
+                                <strong>Claim:</strong> According to A it was just a sports hobby. A claimed for labour
+                                market subsidy.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2 text-blue-400">•</span>
+                                <strong>Schedule:</strong> Practices from Mondays to Thursdays 6 hours per day. On
+                                weekends there would be icehockey games.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-teal-custom-light border-l-8 border-teal-custom rounded-r-xl p-6 shadow-sm hover-lift relative overflow-hidden group">
+                    <div
+                        class="absolute right-6 top-1/2 transform -translate-y-1/2 text-teal-custom opacity-10 text-6xl group-hover:scale-110 transition-transform">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="flex items-start relative z-10">
+                        <div class="mt-1 mr-6 text-teal-custom">
+                            <i class="fas fa-scale-balanced text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-heading font-bold text-lg text-teal-custom mb-2">The Court's Decision</h4>
+                            <p class="text-gray-700 text-base leading-relaxed mb-4">
+                                The Court held that A's activity would constitute <span
+                                    class="font-bold bg-white px-2 py-0.5 rounded text-teal-custom shadow-sm">work in
+                                    self-employment</span>.
+                            </p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                                The activity was so timeconsuming that it prevented A from taking part in fulltime
+                                employment.
+                            </p>
+
+                            <div
+                                class="inline-flex items-center bg-white border-2 border-red-100 px-4 py-1.5 rounded-full shadow-sm">
+                                <i class="fas fa-times-circle mr-2 text-red-500"></i>
+                                <span class="font-bold text-gray-900 text-sm">Therefore A had not right to unemployment
+                                    benefit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="absolute top-0 right-0 w-[15vh] h-[15vh] bg-gray-50 rounded-bl-full -z-0 pointer-events-none"></div>
+
+        <div class="absolute bottom-6 right-8 text-gray-200 font-heading font-bold text-5xl select-none">09</div>
+
+        <a href="page7.html"
+            class="absolute left-8 top-1/2 transform -translate-y-1/2 text-4xl finnish-blue hover:scale-110 transition-transform z-50 opacity-60 hover:opacity-100">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a href="page9.html"
+            class="absolute right-8 top-1/2 transform -translate-y-1/2 text-4xl finnish-blue hover:scale-110 transition-transform z-50 opacity-60 hover:opacity-100">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
 </body>
+
 </html>
