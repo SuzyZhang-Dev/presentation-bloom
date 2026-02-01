@@ -35,7 +35,6 @@
             border-color: #002F6C;
         }
 
-        /* Using the Teal accent for consistency in Decisions */
         .text-teal-custom {
             color: #00897B;
         }
@@ -52,9 +51,9 @@
             box-shadow: 0 10px 30px -5px rgba(0, 47, 108, 0.1);
         }
 
+        /* 这里的 clip-path 依然控制斜切角度 */
         .left-panel-clip {
-            /* 保持 Page 7 的切角比例 */
-            clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
         }
 
         .hover-lift {
@@ -71,8 +70,8 @@
 <body>
     <div class="w-full h-screen bg-white flex relative overflow-hidden">
 
-        <div
-            class="w-[40%] h-full bg-blue-50 relative left-panel-clip z-10 flex flex-col items-center justify-center px-8">
+        <div style="width: 30%;"
+            class="h-full bg-blue-50 relative left-panel-clip z-10 flex flex-col items-center justify-center px-8 flex-none">
 
             <div class="absolute top-16 left-10 pointer-events-none">
                 <span
@@ -135,7 +134,7 @@
                         <i class="fas fa-hockey-puck text-2xl"></i>
                     </div>
                     <div>
-                        <h4 class="font-heading font-bold text-lg text-gray-700 mb-2">The Facts &amp; Claim</h4>
+                        <h4 class="font-heading font-bold text-lg text-gray-700 mb-2">The Facts</h4>
                         <ul class="space-y-2 text-gray-600 text-base leading-relaxed">
                             <li class="flex items-start">
                                 <span class="mr-2 text-blue-400">•</span>
@@ -143,22 +142,19 @@
                             </li>
                             <li class="flex items-start">
                                 <span class="mr-2 text-blue-400">•</span>
-                                <strong>Status:</strong> A was not engaged in worklife or studies.
+                                A was not engaged in worklife or studies.
                             </li>
                             <li class="flex items-start">
                                 <span class="mr-2 text-blue-400">•</span>
-                                <strong>Contract:</strong> No employment contract had been signed and A did not receive
-                                wages nor any other form of remuneration.
+                                No employment contract had been signed.
                             </li>
                             <li class="flex items-start">
                                 <span class="mr-2 text-blue-400">•</span>
-                                <strong>Claim:</strong> According to A it was just a sports hobby. A claimed for labour
-                                market subsidy.
+                                According to A it was just a sports hobby.
                             </li>
                             <li class="flex items-start">
                                 <span class="mr-2 text-blue-400">•</span>
-                                <strong>Schedule:</strong> Practices from Mondays to Thursdays 6 hours per day. On
-                                weekends there would be icehockey games.
+                                Practices Mon-Thu 6h/day + weekend games.
                             </li>
                         </ul>
                     </div>
@@ -181,16 +177,11 @@
                                     class="font-bold bg-white px-2 py-0.5 rounded text-teal-custom shadow-sm">work in
                                     self-employment</span>.
                             </p>
-                            <p class="text-gray-600 text-sm leading-relaxed mb-3">
-                                The activity was so timeconsuming that it prevented A from taking part in fulltime
-                                employment.
-                            </p>
 
                             <div
                                 class="inline-flex items-center bg-white border-2 border-red-100 px-4 py-1.5 rounded-full shadow-sm">
                                 <i class="fas fa-times-circle mr-2 text-red-500"></i>
-                                <span class="font-bold text-gray-900 text-sm">Therefore A had not right to unemployment
-                                    benefit</span>
+                                <span class="font-bold text-gray-900 text-sm">No right to unemployment benefit</span>
                             </div>
                         </div>
                     </div>
@@ -200,8 +191,6 @@
         </div>
 
         <div class="absolute top-0 right-0 w-[15vh] h-[15vh] bg-gray-50 rounded-bl-full -z-0 pointer-events-none"></div>
-
-        <div class="absolute bottom-6 right-8 text-gray-200 font-heading font-bold text-5xl select-none">09</div>
 
         <a href="page7.html"
             class="absolute left-8 top-1/2 transform -translate-y-1/2 text-4xl finnish-blue hover:scale-110 transition-transform z-50 opacity-60 hover:opacity-100">
