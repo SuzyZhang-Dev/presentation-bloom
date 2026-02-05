@@ -34,8 +34,9 @@
 </head>
 
 <body>
-    <div class="w-full h-screen bg-white relative overflow-hidden flex flex-col items-center justify-center">
+    <div class="w-full h-screen bg-white relative overflow-hidden flex flex-row">
 
+        <!-- Background Elements -->
         <div
             class="absolute top-0 right-0 w-[50vh] h-[50vh] bg-blue-50 rounded-bl-full pointer-events-none -z-0 opacity-60">
         </div>
@@ -43,8 +44,14 @@
             class="absolute bottom-0 left-0 w-[40vh] h-[40vh] bg-gray-50 rounded-tr-full pointer-events-none -z-0 opacity-60">
         </div>
 
-        <div class="z-10 flex flex-col items-center text-center px-8">
+        <!-- Left Column: Image -->
+        <div class="w-1/2 h-full flex items-center justify-center p-8 z-10">
+            <img src="download.jpeg" alt="Bloom Helsinki Image"
+                class="max-w-full max-h-full object-contain rounded-lg shadow-lg" />
+        </div>
 
+        <!-- Right Column: Text Content -->
+        <div class="w-1/2 h-full flex flex-col items-center justify-center text-center px-8 z-10">
             <div class="mb-12">
                 <img src="https://images.squarespace-cdn.com/content/v1/603babd75646d67cf7bc5fa3/1614523626904-81WZ4LUTRA5FHBJFFXTX/bloom-logo?format=2500w"
                     alt="Bloom Helsinki Logo" class="w-80 h-auto select-none" />
@@ -61,8 +68,8 @@
                 <p class="text-finnish-blue font-heading font-bold text-2xl mt-2">
                     Bloom Helsinki & Liisa Hämeen-Anttila
                 </p>
+                <p>Password: GROW</p>
             </div>
-
         </div>
 
         <a href="page13.html"
